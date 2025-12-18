@@ -1109,69 +1109,6 @@
         <div class="history-list" id="historyList"></div>
       </div>
 
-      <!-- PAGE SCANNER QR -->
-      <div id="scan-page" class="page">
-        <div class="header">
-          <h1>📱 Scanner QR Code</h1>
-          <div class="date-info">Pointage rapide par QR Code</div>
-        </div>
-
-        <div class="scanner-container">
-          <h2 style="color: #2c3e50; margin-bottom: 20px">
-            Scannez le badge de l'employé
-          </h2>
-          <div class="scanner-video">
-            📷
-            <div class="scanner-overlay">
-              <div class="scanner-corners">
-                <div class="scanner-corner top-left"></div>
-                <div class="scanner-corner top-right"></div>
-                <div class="scanner-corner bottom-left"></div>
-                <div class="scanner-corner bottom-right"></div>
-              </div>
-              <div class="scanner-line"></div>
-            </div>
-          </div>
-          <div class="scanner-info">
-            Positionnez le QR code dans le cadre pour scanner automatiquement
-          </div>
-          <button
-            class="filter-btn"
-            onclick="startScanner()"
-            style="margin-top: 20px"
-          >
-            🎥 Activer la caméra
-          </button>
-
-          <div class="manual-entry">
-            <h3>Saisie manuelle</h3>
-            <div class="input-group">
-              <input
-                type="text"
-                id="manualMatricule"
-                placeholder="Entrez le matricule (ex: EMP001)"
-              />
-            </div>
-            <button class="filter-btn" onclick="validateManualEntry()">
-              Valider le pointage
-            </button>
-          </div>
-        </div>
-
-        <div class="stats">
-          <div class="stat-card">
-            <div class="stat-label">Pointages aujourd'hui</div>
-            <div class="stat-value">24</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-label">Dernier pointage</div>
-            <div class="stat-value" style="font-size: 16px">
-              Ahmed B. - 14:32
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- PAGE CHANTIERS -->
       <div id="chantiers-page" class="page">
         <div class="header">
@@ -1204,16 +1141,6 @@
         </div>
 
         <div class="chantiers-grid" id="chantiersList"></div>
-      </div>
-
-      <!-- PAGE PLUS -->
-      <div id="plus-page" class="page">
-        <div class="header">
-          <h1>⋯ Plus d'options</h1>
-          <div class="date-info">Paramètres et fonctionnalités avancées</div>
-        </div>
-
-        <div class="menu-grid" id="plusMenu"></div>
       </div>
     </div>
 
@@ -1286,17 +1213,10 @@
         <div class="nav-label">Historique</div>
         <div class="nav-badge" id="historyBadge">12</div>
       </div>
-      <div class="nav-item" onclick="navigateTo('scan')">
-        <div class="nav-icon">📱</div>
-        <div class="nav-label">Scanner QR</div>
-      </div>
+
       <div class="nav-item" onclick="navigateTo('chantiers')">
         <div class="nav-icon">🏗️</div>
         <div class="nav-label">Chantiers</div>
-      </div>
-      <div class="nav-item" onclick="navigateTo('plus')">
-        <div class="nav-icon">⋯</div>
-        <div class="nav-label">Plus</div>
       </div>
     </nav>
 
